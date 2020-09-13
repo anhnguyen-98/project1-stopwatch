@@ -1,0 +1,59 @@
+@import url("https://fonts.googleapis.com/css?family=Lato:400,700");
+
+:root {
+  --primaryColor: #f09d51;
+  --mainWhite: #fff;
+  --mainBlack: #222;
+  --mainGrey: #ececec;
+  --mainSpacing: 0.1rem; 
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  color: var(--mainBlack);
+  background-color: var(--primaryColor);
+  font-family: "Lato", sans-serif;
+  height: 100vh;
+  word-spacing: var(--mainSpacing);
+}
+.container {
+  text-align: center;
+  align-items: center;
+  height: 100%;
+  position: relative;
+}
+.content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+}
+header {
+  margin-bottom: 40px;
+}
+header h1 {
+  font-size: 60px;
+}
+.content .count-line {
+  font-size: 70px;
+  border: 1px solid var(--mainGrey);
+  padding: 0 20px;
+}
+button {
+  outline: 0;
+  margin-right: 1px;
+  transition: 0.3s;
+}
+button:hover {
+  outline: 0;
+  background-color: var(--mainBlack);
+  color: var(--mainWhite);
+} 
+.btn:focus {
+  border-color: #80bdff;
+  outline: 0;
+  box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+}
