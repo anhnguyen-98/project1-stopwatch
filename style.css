@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css?family=Lato:400,700");
 
 :root {
-  --primaryColor: #f09d51;
+  --primaryColor: #5da4d3;
   --mainWhite: #fff;
   --mainBlack: #222;
   --mainGrey: #ececec;
@@ -20,40 +20,31 @@ body {
   word-spacing: var(--mainSpacing);
 }
 .container {
-  text-align: center;
-  align-items: center;
   height: 100%;
-  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
 }
 .content {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translateX(-50%) translateY(-50%);
+  margin: auto;
+  text-align: center;
 }
-header {
-  margin-bottom: 40px;
-}
-header h1 {
-  font-size: 60px;
-}
-.content .count-line {
-  font-size: 70px;
-  border: 1px solid var(--mainGrey);
+
+.count-line {
+  font-size: 100px;
   padding: 0 20px;
 }
-button {
+
+.btn {
   outline: 0;
   margin-right: 1px;
   transition: 0.3s;
+  padding: 5px 30px;
 }
+
 button:hover {
   outline: 0;
-  background-color: var(--mainBlack);
+  background-color: #449cd7;
   color: var(--mainWhite);
 } 
-.btn:focus {
-  border-color: #80bdff;
-  outline: 0;
-  box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
-}
+

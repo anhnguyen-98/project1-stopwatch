@@ -28,7 +28,7 @@ resetBtn.onclick = () => {
     appendTens.innerHTML = "0" + tens;
 }
 
-startTimer = () => {
+const startTimer = () => {
     tens++;
     if (tens <= 9) appendTens.innerHTML = "0" + tens;
     if (tens > 9) appendTens.innerHTML= tens;
